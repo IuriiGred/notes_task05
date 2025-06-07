@@ -8,11 +8,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="theme-dark">
-    <load src="./partials/header.html" />
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/tasks-list.html" />
+      <div class="header-right-side-wrapper">
+        <button id="themeToggle" class="theme-toggle-button">Change Theme</button>
+        <form class="header-form" id="task-form">
+          <input
+            class="header-form-input"
+            type="text"
+            name="taskName"
+            placeholder="Title"
+          />
+          <input
+            class="header-form-input"
+            type="text"
+            name="taskDescription"
+            placeholder="Description"
+          />
+          <button class="header-form-btn" type="submit">Add</button>
+        </form>
+      </div>
+
+    <ul id="task-list"></ul>
     </main>
 
     <script type="module" src="./main.js"></script>
